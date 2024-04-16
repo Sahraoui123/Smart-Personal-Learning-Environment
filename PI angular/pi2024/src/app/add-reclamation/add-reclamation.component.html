@@ -1,0 +1,24 @@
+<form [formGroup]="reclamationForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <input matInput type="text" formControlName="description">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Reason</mat-label>
+    <input matInput type="text" formControlName="reason">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Status</mat-label>
+    <mat-select formControlName="status">
+      <mat-option value="submitted">Submitted</mat-option>
+      <mat-option value="under_review">Under Review</mat-option>
+      <mat-option value="approved">Approved</mat-option>
+      <mat-option value="rejected">Rejected</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Submit</button>
+</form>
+<app-retrieve-all-reclamation> </app-retrieve-all-reclamation>
