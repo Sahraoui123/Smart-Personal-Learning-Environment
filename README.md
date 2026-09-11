@@ -1,3 +1,4 @@
+This is not the full project but the part i devoleped in the intern project SPLE : 
 
 Smart Personal Learning Environment (SPLE), focusing on
 creating a tailored and adaptive educational experience for
